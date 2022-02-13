@@ -1,0 +1,49 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<div style="font-size: 50px; margin: 10px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>About Me</strong></div>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item" style="font-size: 25px">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          My Introduction
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          My name is <strong>Rajesh Kumar Singh</strong>. I am a second year student of the department of Mining Engineering, enrolled in its dual degree course. I am from New Delhi. I am a boarder of <strong> Rajendra Prasad Hall of Resisdence </strong> . My hobbies are playing football and competitive programming.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item" style="font-size: 25px">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          My skills
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          I am a competitive programmer. <br> My rating on <a href="https://www.codechef.com/users/nutnick31">CodeChef</a> is <strong>1607</strong>. <br> I have learnt python, C++, C and JavaScript. <br> I am a Web Developer.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item" style="font-size: 25px">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Other Achievements
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+                <li>Cleared MTA exam in first attempt.</li>
+                <li>Tutor at <strong>Chegg</strong>.</li>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% endblock content %}

@@ -1,0 +1,125 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div>
+        <h1>My Academic Information</h1>
+    </div>
+    <div>
+        <h2>My Education</h2>
+    </div>
+    <div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Class X</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                      <li><strong>School : Kendriya Vidyalaya Janakpuri</strong></li>
+                      <li><strong>CGPA : 9.6</strong></li>
+                      <li><strong>First  Ranker in NSO and IMO.</strong></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Class XII</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                      <li><strong>School : Navyug Convect School</strong></li>
+                      <li><strong>Precentage : 86.6%</strong></li>
+                      <li><strong>Subjects : English, Mathematics, Physics, Chemistry, Physical Eduaction</strong></li>
+                      <li><strong>Bronze Meadlist in Zonal Taekwondo</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>College</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                      <li><strong>College : Indian Institute of Technology Kharagpur</strong></li>
+                      <li><strong>Department of Mining Engineering</strong></li>
+                      <li><strong>CGPA : 7.8</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Internship</strong>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                    <li><strong>Company : Yhills Edutech</strong></li>
+                    <li><strong>Profile : Web Developer</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--PROJECTS START-->
+    <div class="row">
+   <div style="margin-top: 1%;" class=" col-sm-6">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">E-commerce Website</h5>
+          <p class="card-text">It is a website made for an e-commerce company. This project include HTML, CSS, JavaScript and Node.js.</p>
+          <a href="https://github.com/NutNick31/Yhills-Project-Rajesh.git" class="btn btn-primary">See the project</a>
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin-top: 1%;" class=" col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">My Portfolio Website</h5>
+              <p class="card-text">In this Project I have included all of my projects and I have used HTML, CSS, JavaScript and bootstrap.</strong></p>
+              <a href="https://github.com/NutNick31/My-Portfolio.git" class="btn btn-primary">See the project</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 1%;" class=" col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Dice Game</h5>
+              <p class="card-text">It is actually a dice game in which whenever you refresh the website the website you will see some faces of the dice and that will decide whether you will win the game or not.</p>
+              <a href="https://github.com/NutNick31/Dice-Game.git" class="btn btn-primary">See the project</a>
+            </div>
+          </div>
+        </div>
+    
+
+    <div style="margin-top: 1%;" class=" col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">TinDog</h5>
+              <p class="card-text">It is website which basically tinder for dogs, where dogs can find ther life partners because they need it too.</p>
+              <a href="https://github.com/NutNick31/TinDog.git" class="btn btn-primary">See the project</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+    <!--PROJECTS END-->
+{% endblock content %}

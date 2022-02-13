@@ -1,0 +1,41 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<style>
+    #Contact{
+    margin: 5%;
+    background-color: #495371;
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon{
+    padding: 20px 10px;
+}
+</style>
+<script src="https://kit.fontawesome.com/1e645e677e.js" crossorigin="anonymous"></script>
+<div>
+    <h1>Contact Me</h1>
+</div>
+<div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Reason for contacting me</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-success">Submit</button>
+    </div>
+
+    <footer id="Contact">
+        <a href="https://www.facebook.com/profile.php?id=100058609449673" class="social-icon fab fa-facebook-f"></a>
+        <a href="https://twitter.com/RajeshK82843857" class="social-icon fab fa-twitter"></a>
+        <a href="https://www.instagram.com/nunick31/" class="social-icon fab fa-instagram"></a>
+        <a href="https://mail.google.com/mail/u/3/?ogbl#inbox" class="social-icon fas fa-envelope"></a>
+        <p>© Copyright 2021 Rajesh Kumar Singh</p>
+      </footer>
+{% endblock content %}
